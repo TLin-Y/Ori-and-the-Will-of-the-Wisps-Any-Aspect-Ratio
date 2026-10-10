@@ -1,6 +1,6 @@
 # Ori-and-the-Will-of-the-Wisps-Any-Aspect-Ratio
 
-Install Extract the mod files directly into your steam game root folder.
+Install Extract the mod files directly into your steam game.exe folder.
 
 For SteamOS / Winlator (Wine Users) If you are playing on Linux (Proton/SteamOS) or Android (Winlator/Wine), you must add the following environment variable to your game or container settings to load the mod: Name: WINEDLLOVERRIDES Value: version=n,b
 
