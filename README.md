@@ -1,10 +1,23 @@
-# Ori-and-the-Will-of-the-Wisps-Any-Aspect-Ratio
+# Ori-and-the-Will-of-the-Wisps-Any-Aspect-Ratio v2
 
-# Install 
-Extract the mod files directly into your steam game.exe folder.
 
-# For SteamOS / Winlator (Wine Users) 
-If you are playing on Linux (Proton/SteamOS) or Android (Winlator/Wine), you must add the following environment variable to your game or container settings to load the mod: Name: WINEDLLOVERRIDES Value: version=n,b
+### Installation
+1. Place `version.dll`, `OriARFix.asi`, and `OriARFix.ini` into the game's root folder (where `oriandthewillowofthewisps.exe` is located).
+2. **Linux / Android Winlator / Proton Users:**
+   * **Winlator / Armada:** Container Settings -> Environment Variables -> Name slot `WINEDLLOVERRIDES`, Value slot `version=n,b`
+   * **Steam (Proton):** Add `WINEDLLOVERRIDES="version=n,b" %command%` to your game's Launch Options.
 
-# Custom Aspect Ratio 
-Open .ini with any text editor. You can easily change TargetWidth and TargetHeight to match any screen ratio you want (e.g., 4:3, 16:10, 21:9).
+### Configuration (`OriARFix.ini`)
+```ini
+[AspectRatio]
+TargetWidth = 4
+TargetHeight = 3
+
+[FOV]
+; true = maintain original width
+; false = maintain original height
+MaintainFOV = true
+; Scaling fov, 1.15x == zoom in for 4:3
+FOVScale = 1.0
+; 2D UI zoom, 0 == auto calc
+UIScale = 0
