@@ -1,4 +1,4 @@
-# Ori-and-the-Will-of-the-Wisps-Any-Aspect-Ratio v2
+# Ori-and-the-Will-of-the-Wisps-Any-Aspect-Ratio v1.0.0
 
 
 ### Installation
